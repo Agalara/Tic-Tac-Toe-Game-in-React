@@ -5,7 +5,7 @@ export default function Player ({initialName,symbol}) {
   const [isEditing, setIsEditing] = useState(false)
  
   function handleEditClick() {
-    setIsEditing( (editing) => !editing) 
+    setIsEditing( (isEditing) => !isEditing) 
   }
 
   function handleChange(event) {
@@ -27,4 +27,4 @@ export default function Player ({initialName,symbol}) {
       <button onClick ={handleEditClick}>{isEditing ? "Save" : "Edit"}</button>
     </li>
   )
-}
+} 
