@@ -35,7 +35,7 @@ function App() {
         />
       </div>
       <h1>React Tic-Tac-Toe</h1>
-      <Log />
+      <Log turns={gameTurns} />
     </main>
   )
 }
