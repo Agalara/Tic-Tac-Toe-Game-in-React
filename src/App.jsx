@@ -1,5 +1,6 @@
 import Player from "./Components/Player"
 import GameBoard from "./Components/GameBoard"
+import Log from "./Components/Log"
 import { useState } from "react"
 
 
@@ -22,6 +23,7 @@ function App() {
         <GameBoard onSelectSquare={handleSelectSquare} activePlayerSymbol={activePlayer} />
       </div>
       <h1>React Tic-Tac-Toe</h1>
+      <Log />
     </main>
   )
 }
