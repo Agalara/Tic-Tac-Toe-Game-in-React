@@ -8,7 +8,7 @@ function deriveActivePlayer (gameTurns){
   if (gameTurns.length > 0 && gameTurns[0].player === 'X'){
     currentPlayer='O'
   }
-  return currenit tPlayer
+  return currentPlayer
 }
 
 function App() {
