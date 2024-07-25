@@ -22,7 +22,7 @@ function deriveActivePlayer (gameTurns){
 function App() {
   const [gameTurns, setGameTurns] = useState([])
   const activePlayer = deriveActivePlayer(gameTurns)
-  let gameBoard = initialGameBoard
+  let gameBoard = [...initialGameBoard.map(array => [...array])]
   let winner = null
 
   for (const turn of gameTurns) {
